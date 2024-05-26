@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .chat {
+        background-image: url(./1225feba5133c84f799fafc11faa410d.jpg);
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        margin-top: 20px;
+    }
+
+    li {
+        height: 30px;
+        background-color: rgb(187, 170, 255);
+        list-style: none;
+        border-radius: 5px 20px 5px;
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-left: 10px;
+
+    }
+
+    .user {
+        text-align: right;
+        border-radius: 20px 5px 20px;
+        height: 30px;
+        background-color: rgb(111, 239, 241);
+        list-style: none;
+    }
+    #message{
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 30px;
+        padding-left: 10px;
+        /* padding-top: 5px; */
+        width: 240px;
+        border: 2px solid rgb(187, 170, 255);
+        /* position: relative; */
+    }
+    #send{
+        margin-top: -24px;
+        margin-left: 215px;
+       
+    }
+    h1{
+        padding-top: 50px;
+    }
+</style>
+
+
+<body>
+    <center>
+        <h1 class="w3-container w3-center w3-animate-top" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Chat Application</h1>
+    </center>
+    <div class="center">
+        <div class="chat">
+            <ul class="messageList">
+            </ul>
+
+            <div class="controls">
+                <input id="message" type="text" placeholder="Type a message">
+             
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" id="send" width="20" height="20" fill="rgb(111, 239, 241)" class="bi bi-send-fill" viewBox="0 0 16 16">
+                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+              </svg>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
